@@ -25,7 +25,7 @@ conn = mysql.connector.connect(
     port=int(os.getenv("MYSQLPORT"))
 )
 
-cursor = connection.cursor(dictionary=True)
+cursor = conn.cursor(dictionary=True)
 
 """ users=[
     {
